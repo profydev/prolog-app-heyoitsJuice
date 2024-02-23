@@ -132,6 +132,10 @@
   flex: 1;
 }
 
+.iconRotate {
+  transform: rotate(180deg);
+}
+
 .collapseMenuItem {
   display: none;
 
