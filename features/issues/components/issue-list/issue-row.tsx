@@ -43,7 +43,6 @@ export function IssueRow({ projectLanguage, issue }: IssueRowProps) {
         </Badge>
       </td>
       <td className={styles.cell}>{numEvents}</td>
-      {/* TO-DO: Call the correct data for Users */}
       <td className={styles.cell}>{numUsers}</td>
     </tr>
   );
