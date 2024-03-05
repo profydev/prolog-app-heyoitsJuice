@@ -20,7 +20,6 @@ export function SidebarNavigation() {
   const router = useRouter();
   const { isSidebarCollapsed, toggleSidebar } = useContext(NavigationContext);
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
-
   return (
     <div
       className={classNames(
@@ -89,14 +88,12 @@ export function SidebarNavigation() {
             ))}
           </ul>
           <ul className={styles.list}>
-            <MenuItemButton
+            <MenuItemLink
               text="Support"
               iconSrc="/icons/support.svg"
               isCollapsed={isSidebarCollapsed}
-              onClick={() =>
-                (window.location.href =
-                  "mailto:support@prolog-app.com?subject=Support Request: ")
-              }
+              href="mailto:support@prolog-app.com?subject=Support Request: "
+              isActive={false}
             />
             <MenuItemButton
               text="Collapse"
