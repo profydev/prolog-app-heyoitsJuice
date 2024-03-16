@@ -5,9 +5,7 @@ export enum ProjectLanguage {
 }
 
 export enum ProjectStatus {
-  // stable = "stable",
   warning = "warning",
-  // critical = "critical",
   info = "info",
   error = "error",
 }
